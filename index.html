@@ -24,13 +24,46 @@
             </div>
             <div class="midcontent" id="midcontent">
                 <form action="" method="post">
-                    
+                    <table class="formclass">
+                        <tr>
+                            <td>
+                                <label for="first_name"><p class="req">First Name: </p></label>
+                                <input type="text" id="first_name" name=”first_name” placeholder="" title="First name" minlength="3">
+                            </td>
+                            <td>
+                                <label for="last_name"><p class="req">Last Name: </p></label>
+                                <input type="text" id="last_name" name=”last_name” placeholder="" title="Last name" minlength="3">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email_addy"><p class="req">Email: </p></label>
+                                <input type="email"id="email_addy" name=”email_addy” placeholder="tom@myspace.com" title="Enter a fake email address">
+                            </td>
+                            <td>
+                                <label for="phone_no"><p>Phone Number: </p></label>
+                                <input type="number" id="phone_no" name="phone_no" placeholder="" title="Phone number">
+                            </td>
+                        </tr>                        
+                        <tr>
+                            <td>
+                                <label for="password"><p class="req">Password: </p></label>
+                                <input type="password" id="password" name=”password” placeholder="" title="Please enter a password" minlength="5">
+                            </td>
+                            <td>
+                                <label for="confirmpass"><p class="req">Confirm Password: </p></label>
+                                <input type="password" id="confirmpass" name="confirmpass" placeholder="" title="Passwords must match" minlength="5">
+                            </td>
+                        </tr>
+
+                    </table>
+                    <button type="submit" class="button">Create Account</button>
+                    <p>Already have an account? So what, make another one.</p>
+
                 </form>
             </div>
-            <div class="botcontent" id="botcontent">
-                <button type="submit" class="button">Create Account</button>
-                <p>Already have an account? So what, make another one.</p>
-            </div>
+            <!-- <div class="botcontent" id="botcontent">
+            </div> -->
         </div>
 
 

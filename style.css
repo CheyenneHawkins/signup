@@ -1,11 +1,10 @@
 :root {
     font-family: 'Nunito', sans-serif;
-    /* font-family: 'VT323', monospace; */
     font-size: 16px;
     margin: 0;
     padding: 0;
     gap: 0;
-    /* background-color: rgb(248, 240, 255); */
+    appearance: none;
     --backgroundcolor: rgb(229, 228, 231);
     --contentwidth: 65vw;
     --contentmargin: 37px;
@@ -19,7 +18,10 @@
     gap: 0;
 }
 
+:root:focus {
+    border: none;
 
+}
 
 .container {
     display: flex;
@@ -58,7 +60,7 @@
 }
 
 .contentdiv {
-    width: clamp(50vw, var(--contentwidth), 100vw);
+    width: clamp(500px, var(--contentwidth), 100vw);
     height: 100vh;
     background-color: var(--backgroundcolor);
     display: flex;
@@ -76,20 +78,24 @@
     margin: 20px;
     margin-left: var(--contentmargin);
     margin-right: 50px;
+    font-weight: bold;
+
 }
 
 .topcontent p {
-    /* text-align: center; */
+    height: auto;
+    font-weight: bold;
 }
 
 .midcontent {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start ;
+    align-items: flex-start;
     background-color: rgb(255, 255, 255);
-    height: 300px;
+    height: 280px;
     align-content: center;
     box-shadow: 0px 12px 5px -8px rgba(0,0,0,0.1);
+    padding-left: var(--contentmargin);
 }
 
 .botcontent {
@@ -97,7 +103,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    height: 25vh;
+    height: auto;
     margin: var(--contentmargin);
     font-size: .8rem;
 }
@@ -111,5 +117,45 @@
     width: 130px;
     font-size: 1rem;
     overflow: hidden;
+    margin-top: 50px;
 
 }
+
+td {
+    padding: 10px;
+    width: 250px;
+    /* border: green solid; */
+    line-height: .2rem;
+}
+
+form {
+    appearance: none;
+    border: none;
+
+}
+
+input {
+    border: rgb(218, 218, 218) solid 1px;
+    border-radius: 5px;
+    box-shadow: 0px 7px 5px -8px rgba(0,0,0,0.3);
+    height: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+label {
+    line-height: 0;
+    margin: 0px;
+}
+
+input:active {
+    border: rgb(0, 255, 34) solid 2px;
+}
+
+.req::after {
+    color: rgb(255, 96, 96);
+    font-size: 1em;
+    content: "*";
+}
+
+
